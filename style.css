@@ -1,49 +1,32 @@
 body {
-    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e9ecef;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
-.zegar {
-    background: white;
+#container {
+    text-align: center;
+    background-color: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
 }
 
-.pole {
-    margin-bottom: 15px;
+h1 {
+    margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: center; /* Wyśrodkowanie etykiet */
+input, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
 }
 
-input[type="time"],
-input[type="number"],
-input[type="text"],
-button {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin: 0 auto; /* Wyśrodkowanie pól */
-    box-sizing: border-box; /* Umożliwia lepsze zarządzanie szerokością */
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+#timer {
+    font-size: 24px;
+    margin-top: 20px;
 }
