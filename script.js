@@ -8,10 +8,8 @@ document.getElementById('startButton').addEventListener('click', function() {
         const startTime = moment(startInput, 'HH:mm');
         const koniecTime = startTime.clone().add(minutyInput, 'minutes');
 
-        // Ustawienie czasu zakończenia w polu
         document.getElementById('koniec').value = koniecTime.format('HH:mm');
 
-        // Rozpoczęcie odliczania
         clearInterval(countdownInterval);
         countdownInterval = setInterval(() => {
             const currentTime = moment();
