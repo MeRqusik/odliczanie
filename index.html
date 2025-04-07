@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odliczanie Czasu</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+</head>
+<body>
+    <div class="zegar">
+        <div class="pole">
+            <label for="start">Start</label>
+            <input type="time" id="start">
+        </div>
+        <div class="pole">
+            <label for="minuty">Minuty</label>
+            <input type="number" id="minuty" value="45">
+        </div>
+        <div class="pole">
+            <label for="koniec">Koniec</label>
+            <input type="time" id="koniec" readonly>
+        </div>
+        <div class="pole">
+            <label for="pozostalo">Pozostało</label>
+            <input type="text" id="pozostalo" readonly>
+        </div>
+        <button id="startButton">Start</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
